@@ -5,7 +5,21 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
-			.total {}
+			body {
+				margin: 0px;
+			}
+			
+			.homefirst {
+				font-family: "微软雅黑";
+				font-size: 14px;
+				background-color: #FDFCF8;
+			}
+			
+			.total {
+				margin: 0 332px 0 332px;
+				text-align: left;
+				background-color: #FDFCF8;
+			}
 			
 			.forts {
 				margin: 35px 0px 0px 0px;
@@ -19,202 +33,641 @@
 				height: 36px;
 			}
 			
-			.homefirst {
-				background-color: #FDFCF8;
-			}
-			
-			.wrapper {
+			.first {
 				height: 100px;
 				width: 1210px;
-				background-color: #FDFCF8;
-				margin: 0 auto;
-				text-align-last: center;
+				margin-left: 12px;
+				text-align-last: left;
 			}
 			
-			.biaoti {
+			.two {
+				position: 0px;
 				height: 48px;
-				width: 1500px;
+				width: 1210px;
 				background-color: #E8E7E3;
-				margin: 0 auto;
-				text-align-last: center;
-				float: left;
+				margin-left: 12px;
+				text-align-last: left;
 				color: #777777;
 			}
 			
-			.biaoti ul li {
-				border: 0px;
-				margin: 0px;
-				width: 155px;
-				height: 48px;
-				text-align-last: center;
-				line-height: 24px;
+			.two ul {
 				list-style: none;
 				padding: 0px;
 				margin: 0px;
+			}
+			
+			.two ul li {
 				float: left;
+				border: 0px;
+				margin: 0 auto;
+				text-align-last: left;
+				line-height: 24px;
 				color: #777777;
+				overflow: hidden;
 			}
 			
 			.three {
 				border: 1px solid #DDDDDD;
-				width: 180px;
-				height: 1745px;
-				margin: 0 0 0 12px;
+				border-top: 0px;
+				display: block;
+				width: 179px;
+				height: 1700px;
+				margin-left: 12px;
 				float: left;
 				color: black;
 			}
-			.three ul li a{
+			
+			.three h2 {
+				width: 170px;
+				height: 19px;
+				padding: 10px 0px 5px 9px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			
+			.three ul {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.three ul li:hover {
+				background-color: #3F3F3F;
+			}
+			
+			.three ul li {
 				list-style: none;
+				padding: 5px 0px 5px 14px;
+			}
+			
+			.three ul li a {
+				display: block;
+				width: 165px;
+				height: 16px;
+				font-size: 12px;
+				text-align-last: left;
 				color: black;
+				text-decoration: none;
 			}
 			
 			.four {
+				padding-top: 30px;
 				width: 850px;
 				height: 1645px;
+				margin: 0 auto;
 				float: left;
 			}
 			
 			.d1 {
-				border: 1px solid #DDDDDD;
+				border-bottom: 1px solid #DDDDDD;
 				width: 810px;
-				height: 150px;
+				height: 148px;
 				text-align-last: center;
+				line-height: 27px;
+				margin-left: 25px;
+				padding-top: 0px;
+				padding-bottom: 30px;
+				color: black;
+			}
+			
+			.d1 h2 {
+				widows: 700px;
+				height: 31px;
+				margin-top: 35px;
+				margin-bottom: 0px;
+				font-family: "微软雅黑";
+				font-size: 24px;
+				color: #3f3f3f;
+			}
+			
+			.d1 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 18px;
+				font-family: "微软雅黑";
+				margin-top: 12px;
+				margin-bottom: 12px;
+			}
+			
+			.d2 {
+				background: transparent url(../img/icon2.png) no-repeat;
+				border-bottom: 1px solid #DDDDDD;
+				width: 810px;
+				height: 118px;
+				text-align-last: left;
 				line-height: 27px;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
 			}
 			
-			.d2 {
-				border: 1px solid #DDDDDD;
-				width: 810px;
-				height: 118px;
-				text-align-last: center;
-				line-height: 27px;
-				margin-left: 25px;
-				padding-bottom: 30px;
-				color: black;
+			.d2 h2 {
+				font-size: 24px;
+				widows: 700px;
+				height: 27px;
+				margin: 35px 0 0 110px;
+				margin-bottom: 0px;
+				font-family: "微软雅黑";
+				color: #3f3f3f;
+			}
+			
+			.d2 p {
+				display: block;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				margin-top: 12px;
+				margin-left: 110px;
+				margin-bottom: 0px;
+				margin-right: 0px;
 			}
 			
 			.d3 {
 				width: 810px;
 				height: 118px;
-				text-align-last: center;
+				text-align-last: left;
 				line-height: 27px;
-				border: 1px solid #DDDDDD;
+				border-bottom: 1px solid #DDDDDD;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				background: transparent url(../img/icon3.png) no-repeat;
+			}
+			
+			.d3 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d3 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
 			}
 			
 			.d4 {
 				width: 810px;
 				height: 118px;
-				text-align-last: center;
+				text-align-last: left;
 				line-height: 27px;
-				border: 1px solid #DDDDDD;
+				border-bottom: 1px solid #DDDDDD;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				background: transparent url(../img/icon4.png) no-repeat;
+			}
+			
+			.d4 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d4 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
 			}
 			
 			.d5 {
 				width: 810px;
 				height: 177px;
-				text-align-last: center;
+				text-align-last: left;
 				line-height: 27px;
-				border: 1px solid #DDDDDD;
+				border-bottom: 1px solid #DDDDDD;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				background: transparent url(../img/icon5.png) no-repeat;
+			}
+			
+			.d5 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d5 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
 			}
 			
 			.d6 {
 				width: 810px;
 				height: 118px;
-				text-align-last: center;
+				text-align-last: left;
 				line-height: 27px;
-				border: 1px solid #DDDDDD;
+				border-bottom: 1px solid #DDDDDD;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				background: transparent url(../img/icon6.png) no-repeat;
+			}
+			
+			.d6 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d6 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
 			}
 			
 			.d7 {
 				width: 810px;
-				height: 69px;
-				text-align-last: center;
+				height: 118px;
+				text-align-last: left;
 				line-height: 27px;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				border-bottom: 1px solid #DDDDDD;
+				background: transparent url(../img/icon7.png) no-repeat;
 			}
-			.d8{
-				text-align-last: center;
+			
+			.d7 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d7 p{
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
+			}
+			.d7 p a{
+				color: black;
+				text-decoration: none;
+			}
+			.d7 p a:hover{
+				border-bottom: 1px solid red ;
+			}
+			
+			.d8 {
+				width: 810px;
+				height: 67px;
+				text-align-last: left;
 				line-height: 27px;
 				margin-left: 25px;
 				padding-bottom: 30px;
 				color: black;
+				border-bottom: 1px solid #DDDDDD;
+				background: transparent url(../img/icon8.png) no-repeat;
+			}
+			
+			.d8 h2 {
+				font-size: 24px;
+				margin: 35px 0 0 110px;
+			}
+			
+			.d8 p {
+				display: block;
+				width: 810px;
+				height: 27px;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				padding: 0px 0 0 110px;
+				margin-top: 12px;
+				margin-bottom: 0px;
+			}
+			.d8 p a{
+				color: black;
+				text-decoration: none;
+			}
+			.d8 p a:hover{
+				color: black;
+				border-bottom: 1px solid red;
+			}
+			
+			.d9 {
+				width: 290px;
+				height: 87px;
+				margin: 15px 0 0 75px;
+				padding: 0 0 30px 0;
+				background: transparent url(../img/icon9.png) no-repeat;
+				float: left;
+			}
+			
+			.d9 p {
+				margin: 0px 0 0 58px;
+				width: 232px;
+				height: 19px;
+			}
+			.d9 p a{
+				text-decoration: none;
+			}
+			.d9 p a:hover{
+				border-bottom: 1px solid red;
+			}
+			
+			.d10 {
+				width: 290px;
+				height: 87px;
+				margin: 15px 0 0 75px;
+				padding: 0 0 30px 0;
+				background: transparent url(../img/icon10.png) no-repeat;
+				float: left;
+			}
+			
+			.d10 p {
+				margin: 0px 0 0 58px;
+				width: 232px;
+				height: 19px;
+			}
+			.d10 p a{
+				text-decoration: none;
+			}
+			.d10 p a:hover{
+				border-bottom: 1px solid red;
 			}
 			
 			.five {
-				width: 180px;
-				height: 1611px;
+				width: 177px;
+				height: 1700px;
 				float: left;
 				color: black;
+				border: 1px solid #DDDDDD;
+				border-top: 0px;
 			}
-			.five ul li a{
+			
+			.five ul li {
 				list-style: none;
+			}
+			
+			.six {
+				width: 1220px;
+				height: 78px;
+				float: left;
+			}
+			
+			.a1 {
+				display: block;
+				line-height: 24px;
+				font-family: "微软雅黑";
+				color: #777777;
+				height: 50px;
+				margin: 0 0 0 15px;
+				padding: 16px 0 0 100px;
+				text-align-last: center;
+				background: #DDDDDD url(../img/alert.png) no-repeat;
+				background-position: 235px 18px;
+				text-decoration: none;
+			}
+			.a2 a:hover{
+				color: black;
+				border-bottom: 1px solid black;
+			}
+			
+			.a2 {
+				display: block;
+				line-height: 24px;
+				font-family: "微软雅黑";
+				color: #777777;
+				height: 50px;
+				margin: 0 0 0 15px;
+				padding: 2px 0 0 100px;
+				text-align-last: center;
+			
+			}
+			
+			.a2 a {
+				color: #777777;
+				text-decoration: none;
+			}
+			
+			.first a {
+				display: block;
+				width: 500px;
+				height: 100px;
+				background: transparent url(../img/bg.png) 0 -150px no-repeat;
+				float: left;
+			}
+			
+			.first a:hover {
+				background-position: 0 -250px;
+			}
+			
+			.first input {
+				height: 30px;
+				margin: 0;
+				width: 256px;
+				height: 28px;
+				background: #fdfdfd;
+				font: 12px Verdana, Arial, Helvetica, sans-serif;
+				border: 1px solid #ddd;
+			}
+			
+			.first button {
+				height: 30px;
+				width: 30px;
+				border: 0px;
+				background-color: #AE4141;
+				color: white;
+			}
+			
+			.first>div {
+				width: 306px;
+				height: 65px;
+				float: right;
+				padding-top: 35px;
+			}
+			
+			.a {
+				width: 155px;
+				height: 48px;
+				background: transparent url(../img/bg.png) 0px 0px;
+			}
+			
+			.a:hover {
+				background: transparent url(../img/bg.png) 0px -48px;
+			}
+			
+			.b {
+				width: 157px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -155px 0px;
+			}
+			
+			.b:hover {
+				width: 157px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -155px -48px;
+			}
+			
+			.c {
+				width: 167px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -312px 0px;
+			}
+			
+			.c:hover {
+				width: 167px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -312px -48px;
+			}
+			
+			.d {
+				width: 158px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -479px 0px;
+			}
+			
+			.d:hover {
+				width: 158px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -479px -48px;
+			}
+			
+			.e {
+				width: 101px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -637px 0px;
+			}
+			
+			.e:hover {
+				width: 101px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -637px -48px;
+			}
+			
+			.f {
+				width: 185px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -738px 0px;
+			}
+			
+			.f:hover {
+				width: 185px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -738px -48px;
+			}
+			
+			.g {
+				width: 177px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -923px 0px;
+			}
+			
+			.g:hover {
+				width: 177px;
+				height: 48px;
+				background: transparent url(../img/bg.png) -923px -48px;
+			}
+			
+			.five h2 {
+				width: 170px;
+				height: 19px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				padding: 10px 0px 5px 8px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			
+			.five ul {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.five ul li a {
+				display: block;
+				color: #AB0B26;
+				width: 165px;
+				height: 16px;
+				font-size: 12px;
+				text-decoration: none;
+				padding: 5px 0px 5px 13px;
+			}
+			
+			.five ul li:hover {
+				background-color: #3F3F3F;
+			}
+			
+			.flag {
+				color: #900B09;
+			}
+			
+			.flag:hover {
 				color: red;
 			}
-			.six {
-				width: 1210px;
-				height: 24px;
-				float: left;
+			
+			.three h2 a {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.three h2 a:hover {
+				text-decoration: underline;
 			}
 		</style>
 	</head>
 
 	<body class="homefirst">
 		<div class="total">
-			<div class="wrapper">
-				<h1>
-					<a href="/css/day02/homework/homework...html" style="float: left;">W3school</a>
-				</h1>
+			<div class="first">
+
+				<a href="/css/day02/homework/homework...html" style="float: left;"></a>
+
 				<div>
 					<form method="get" action="http://www.baidu.com">
-						<input class="fort" type="submit" class="button" value="Go" title="搜索" style="float: right;" />
-						<input class="forts" type="text" class="box" title="在此处输入搜索内容" style="float: right;" />
+						<input type="text" />
+						<button>GO</button>
 					</form>
 				</div>
 			</div>
-			<div class="biaoti">
+			<div class="two">
 				<ul>
-					<li name="a">
-						<a href="homework...html">HTML/CSS</a>
+					<li class="a">
+						<a href="homework...html"></a>
 					</li>
-					<li name="b">
-						<a href="homework...html">JavaScript</a>
+					<li class="b">
+						<a href="homework...html"></a>
 					</li>
-					<li name="c">
-						<a href="homework...html">Server Side</a>
+					<li class="c">
+						<a href="homework...html"></a>
 					</li>
-					<li name="d">
-						<a href="homework...html">ASP.NET</a>
+					<li class="d">
+						<a href="homework...html"></a>
 					</li>
-					<li name="e">
-						<a href="homework...html">XML</a>
+					<li class="e">
+						<a href="homework...html"></a>
 					</li>
-					<li name="f">
-						<a href="homework...html">Web Services</a>
+					<li class="f">
+						<a href="homework...html"></a>
 					</li>
-					<li name="g">
-						<a href="homework...html">Web Building</a>
+					<li class="g">
+						<a href="homework...html"></a>
 					</li>
 				</ul>
 			</div>
 			<div class="three">
-				<h2>HTML教程</h2>
+				<h2 style="margin-top: 10px;">HTML 教程</h2>
 				<ul>
 					<li>
 						<a href="homework...html">HTML</a>
@@ -250,7 +703,7 @@
 						<a href="homework...html">jQuery Mobile</a>
 					</li>
 					<li>
-						<a href="homework...html">AJKX</a>
+						<a href="homework...html">AJAX</a>
 					</li>
 					<li>
 						<a href="homework...html">JSON</a>
@@ -262,7 +715,7 @@
 						<a href="homework...html">E4X</a>
 					</li>
 					<li>
-						<a href="homework...html">WMLScirpt</a>
+						<a href="homework...html">WMLScript</a>
 					</li>
 				</ul>
 				<h2>服务器脚本</h2>
@@ -283,7 +736,7 @@
 						<a href="homework...html">VBScript</a>
 					</li>
 				</ul>
-				<h2>XML教程</h2>
+				<h2>XML 教程</h2>
 				<ul>
 					<li>
 						<a href="homework...html">XML</a>
@@ -391,64 +844,88 @@
 						<a href="homework...html">网络媒体</a>
 					</li>
 				</ul>
-				<h2>关于W3School</h2>
-				<h2>帮助W3School</h2>
+				<h2><a href="homework...html" >关于W3School</a></h2>
+				<h2><a href="homework...html" >帮助W3School</a></h2>
 			</div>
 			<div class="four">
 				<div>
 					<div class="d1">
 						<h2>领先的 Web 技术教程 - 全部免费</h2>
-						<p>在 w3school，你可以找到你所需要的所有的网站建设教程。<br /> 从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。<br />
-						</p>
+						<p>在 w3school，你可以找到你所需要的所有的网站建设教程。</p>
+						<p>从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET。</p>
 						<p>
-							<strong>从左侧的菜单选择你需要的教程！ </strong>
+							<strong style="color: #3f3f3f;">从左侧的菜单选择你需要的教程！ </strong>
 						</p>
 					</div>
 					<div class="d2">
 						<h2>完整的网站技术参考手册</h2>
-						<p>我们的参考手册涵盖了网站技术的方方面面。<br />其中包括W3C标准技术：HTML、CSS、XML 。以及其他技术，诸如 JavaScript、PHP、SQL 等。
+						<p>我们的参考手册涵盖了网站技术的方方面面。</p>
+						<p>其中包括W3C标准技术：HTML、CSS、XML 。以及其他技术，诸如 JavaScript、PHP、SQL 等。
 						</p>
 					</div>
 					<div class="d3">
 						<h2>在线实例测试工具</h2>
-						<p> 在 w3school，我们提供上千个实例。<br /> 通过使用我们的在线编辑器，你可以编辑这些例子，并对代码进行实验。
+						<p> 在 w3school，我们提供上千个实例。</p>
+						<p>通过使用我们的在线编辑器，你可以编辑这些例子，并对代码进行实验。
 						</p>
 					</div>
 					<div class="d4">
 						<h2>快捷易懂的学习方式</h2>
-						<p> 一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。<br /> 在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。。
-						</p>
+						<p> 一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。</p>
+						<p> 在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。。</p>
 					</div>
 					<div class="d5">
 						<h2>从何入手？</h2>
-						<p> 什么是一个Web建设者需要学习的知识呢？<br /> W3School将为您回答这个问题，在您成为专业 Web 开发者的路上助一臂之力。<br /> 如果您是初学者，请您阅读《网站构建初级教程》。
-							<br /> 如果您是开发者，请您阅读《网站构建高级教程》。
-							<br />
-						</p>
+						<p> 什么是一个Web建设者需要学习的知识呢？</p>
+						<p>W3School将为您回答这个问题，在您成为专业 Web 开发者的路上助一臂之力。</p>
+						<p>如果您是初学者，请您阅读
+							<a href="homework...html" class="flag">《网站构建初级教程》</a>。</p>
+						<p>如果您是开发者，请您阅读《
+							<a href="homework...html" class="flag">网站构建高级教程</a>》。</p>
 					</div>
 					<div class="d6">
 						<h2>W3School 新闻</h2>
-						<p>CSS3 参考手册 已上线，敬请批评指正。</p>
+						<p>
+							<a href="homework...html" class="flag">CSS3 参考手册</a> 已上线，敬请批评指正。</p>
 					</div>
 					<div class="d7">
 						<h2>W3School 更新信息</h2>
-						<p> 参考手册：PHP Calendar 函数 参考手册：PHP Date / Time 函数 教程：HTML 教程 </p>
+						<p>
+							<a href="homework...html" class="flag">参考手册：PHP Calendar 函数</a>
+							<a href="homework...html" class="flag">参考手册：PHP Date / Time 函数</a>
+							<a href="homework...html" class="flag">教程：HTML 教程</a>
+						</p>
 					</div>
 					<div class="d8">
 						<h2>W3School 友情链接</h2>
-						<p> Firefox 中文社区 w3ctech WeTest腾讯质量开放平台<br /> 新浪微博 微信公众号<br /> W3School 微信公众号 W3School 官方服务号
+						<p>
+							<a style="color: black;" href="homework...html">Firefox 中文社区</a>
+							<a style="color: black;" href="">w3ctech WeTest</a>
+							<a style="color: black;" href="">腾讯质量开放平台</a>
+						</p>
+					</div>
+					<div class="d9">
+						<p>新浪微博</p>
+						<p>
+							<a href="homework...html">W3School 官方微博</a>
+						</p>
+					</div>
+					<div class="d10">
+						<p>微信公众号</p>
+						<p>
+							<a href="homework...html">W3School 官方服务号</a>
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="five">
-				<h2>参考手册</h2>
+				<h2 style="margin-top: 10px;">参考手册</h2>
 				<ul>
 					<li>
-						<a href="homework...html">HTML/HTML5标签</a>
+						<a href="homework...html">HTML/HTML5 标签</a>
 					</li>
 					<li>
-						<a href="homework...html">HTML颜色</a>
+						<a href="homework...html">HTML 颜色</a>
 					</li>
 					<li>
 						<a href="homework...html">CSS 1,2,3</a>
@@ -502,7 +979,7 @@
 				<h2>字符集</h2>
 				<ul>
 					<li>
-					<a href="homework...html">HTML 字符集</a>
+						<a href="homework...html">HTML 字符集</a>
 					</li>
 					<li>
 						<a href="homework...html">HTML ASCII</a>
@@ -517,113 +994,113 @@
 				<h2>实例/案例</h2>
 				<ul>
 					<li>
-					<a href="homework...html">HTML 实例</a>
+						<a href="homework...html">HTML 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">CSS 实例</a>
+						<a href="homework...html">CSS 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">XML 实例</a>
+						<a href="homework...html">XML 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">JavaScript 实例</a>
+						<a href="homework...html">JavaScript 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">HTML DOM 实例</a>
+						<a href="homework...html">HTML DOM 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">jQuery 实例</a>
+						<a href="homework...html">jQuery 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">jQuery Mobile 实例</a>
+						<a href="homework...html">jQuery Mobile 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">XML DOM 实例</a>
+						<a href="homework...html">XML DOM 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">DHTML 实例</a>
+						<a href="homework...html">DHTML 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">AJAX 实例</a>
+						<a href="homework...html">AJAX 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">VBScript 实例</a>
+						<a href="homework...html">VBScript 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">ASP 实例</a>
+						<a href="homework...html">ASP 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">ADO 实例</a>
+						<a href="homework...html">ADO 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">SVG 实例</a>
+						<a href="homework...html">SVG 实例</a>
 					</li>
 					<li>
-					<a href="homework...html">WAP 实例</a>
+						<a href="homework...html">WAP 实例</a>
 					</li>
 				</ul>
 				<h2>测验/考试</h2>
 				<ul>
 					<li>
-					<a href="homework...html">HTML 测验</a>
+						<a href="homework...html">HTML 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">HTML5 测验</a>
+						<a href="homework...html">HTML5 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">XHTML 测验</a>
+						<a href="homework...html">XHTML 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">CSS 测验</a>
+						<a href="homework...html">CSS 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">XML 测验</a>
+						<a href="homework...html">XML 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">JavaScirpt 测验</a>
+						<a href="homework...html">JavaScirpt 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">jQuery 测验</a>
+						<a href="homework...html">jQuery 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">SQL 测验</a>
+						<a href="homework...html">SQL 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">ASP 测验</a>
+						<a href="homework...html">ASP 测验</a>
 					</li>
 					<li>
-					<a href="homework...html">PHP 测验</a>
+						<a href="homework...html">PHP 测验</a>
 					</li>
 				</ul>
 				<h2>代码验证</h2>
 				<ul>
 					<li>
-					<a href="homework...html">验证 HTML</a>
+						<a href="homework...html">验证 HTML</a>
 					</li>
 					<li>
-					<a href="homework...html">验证 CSS</a>
+						<a href="homework...html">验证 CSS</a>
 					</li>
 					<li>
-					<a href="homework...html">验证 XHTML</a>
+						<a href="homework...html">验证 XHTML</a>
 					</li>
 					<li>
-					<a href="homework...html">验证 XML</a>
+						<a href="homework...html">验证 XML</a>
 					</li>
 					<li>
-					<a href="homework...html">验证 WML</a>
+						<a href="homework...html">验证 WML</a>
 					</li>
 				</ul>
 			</div>
 			<div class="six">
-				<p>
+				<p class="a1">
 					W3School 简体中文版提供的内容仅用于培训和测试， 不保证内容的正确性。 通过使用本站内容随之而来的风险与本站无关。
 				</p>
-				<p>
-				<a href="homework...html">使用条款和隐私条款</a>
-				。版权所有，保留一切权利。赞助商：
-				<a href="homework...html">上海赢科投资有限公司</a>
-				。
-				<a href="homework...html"> 蒙ICP备06004630号</a>
+				<p class="a2">
+					<a href="homework...html">使用条款和隐私条款</a>
+					。版权所有，保留一切权利。赞助商：
+					<a href="homework...html">上海赢科投资有限公司</a>
+					。
+					<a href="homework...html"> 蒙ICP备06004630号</a>
 				</p>
 			</div>
 		</div>
